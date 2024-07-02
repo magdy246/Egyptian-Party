@@ -6,22 +6,22 @@
 
 @font-face {
     font-family: 'Gugi-R';
-    src: url(/webfonts/Gugi-Regular.ttf);
+    src: url(../webfonts/Gugi-Regular.ttf);
 }
 
 @font-face {
     font-family: "Blinker-R";
-    src: url(/webfonts/Blinker-Regular.ttf);
+    src: url(../webfonts/Blinker-Regular.ttf);
 }
 
 @font-face {
     font-family: "Blinker-B";
-    src: url(/webfonts/Blinker-Bold.ttf);
+    src: url(../webfonts/Blinker-Bold.ttf);
 }
 
 @font-face {
     font-family: "Blinker-L";
-    src: url(/webfonts/Blinker-Light.ttf);
+    src: url(../webfonts/Blinker-Light.ttf);
 }
 
 :root {
@@ -34,7 +34,7 @@
     --box-shadow-input: rgb(214, 46, 51);
     --box-shadow-name: #800000;
     --box-shadow-about: rgba(0, 0, 0, 0.7);
-    --box-shadow-cards: rgba(80, 0, 0, 0.92);
+    --box-shadow-cards: rgba(102, 0, 0, 0.92);
     /*&&&&&&&&&&&&&& FONTSs &&&&&&&&&&&&&&*/
     --Gugi-R: "Gugi-R";
     --Blinker-R: "Blinker-R";
@@ -46,6 +46,11 @@
 
 nav {
     right: 100%;
+}
+
+.open-side-bar
+{
+    bottom: 50%;
 }
 
 .close-btn i {
@@ -80,7 +85,7 @@ nav {
 }
 
 .div-header {
-    background-image: url(/image/events-heavenly-header.jpg);
+    background-image: url(../image/events-heavenly-header.jpg);
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -98,6 +103,12 @@ nav {
 
 .bg-header p {
     font-family: var(--Blinker-R);
+}
+
+@media (max-width:640px) {
+    .open-side-bar{
+        bottom: 80%;
+    }
 }
 
 /*^^^^^^ SECTION-ONE ^^^^^^*/
@@ -128,7 +139,7 @@ nav {
 
 /*^^^^^^ SECTION-TWO ^^^^^^*/
 #section-two {
-    background-image: url(/image/invitation-2508607__340.jpg);
+    background-image: url(../image/invitation-2508607__340.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

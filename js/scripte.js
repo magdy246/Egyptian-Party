@@ -6,7 +6,7 @@ $(".close-btn").on("click", function () {
 });
 
 $(".open-side-bar").on("click", function () {
-  $(".side-bar").animate({ right: "80%" }, 1000);
+  $(".side-bar").animate({ right: "70%" }, 1000);
   $(".close-btn").fadeIn(2300);
   $(".list-ul").fadeIn(2300);
 });
