@@ -1,0 +1,182 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Gugi-R';
+    src: url(/webfonts/Gugi-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Blinker-R";
+    src: url(/webfonts/Blinker-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Blinker-B";
+    src: url(/webfonts/Blinker-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Blinker-L";
+    src: url(/webfonts/Blinker-Light.ttf);
+}
+
+:root {
+    /*&&&&&&&&&&&&&& COLORs &&&&&&&&&&&&&&*/
+    --bg-header: rgba(214, 46, 51, 0.6);
+    --bg-pra-section-one: #ccc;
+    --icon-hover: #fff;
+    --pra-section-one: #212529;
+    --text-shadow-name: rgba(128, 0, 0, 1);
+    --box-shadow-input: rgb(214, 46, 51);
+    --box-shadow-name: #800000;
+    --box-shadow-about: rgba(0, 0, 0, 0.7);
+    --box-shadow-cards: rgba(80, 0, 0, 0.92);
+    /*&&&&&&&&&&&&&& FONTSs &&&&&&&&&&&&&&*/
+    --Gugi-R: "Gugi-R";
+    --Blinker-R: "Blinker-R";
+    --Blinker-B: "Blinker-B";
+    --Blinker-L: "Blinker-L";
+}
+
+/*^^^^^^ HEADER ^^^^^^*/
+
+nav {
+    right: 100%;
+}
+
+.close-btn i {
+    width: 90%;
+    transition: 0.5s all;
+}
+
+.close-btn {
+    display: none;
+    cursor: pointer;
+}
+
+.list-ul {
+    display: none;
+}
+
+.nav-info {
+    transition: 0.7s all;
+}
+
+.nav-info:hover,
+.close-btn i:hover
+{
+    color: var(--box-shadow-name);
+    cursor: pointer;
+}
+
+.toggel {
+    font-family: var(--Blinker-R);
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.div-header {
+    background-image: url(/image/events-heavenly-header.jpg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-header {
+    background-color: var(--bg-header);
+}
+
+.bg-header h2 {
+    font-size: 60px;
+    font-family: var(--Gugi-R);
+}
+
+.bg-header p {
+    font-family: var(--Blinker-R);
+}
+
+/*^^^^^^ SECTION-ONE ^^^^^^*/
+.singer-name {
+    background-color: var(--bg-header);
+    font-size: 30px;
+    font-family: var(--Blinker-B);
+    text-shadow: -1px 1px 17px var(--text-shadow-name);
+    box-shadow: 10px -1px 97px -7px var(--box-shadow-name) inset;
+}
+
+.singer-about {
+    background-color: var(--bg-pra-section-one);
+    color: var(--pra-section-one);
+    font-family: var(--Blinker-R);
+    box-shadow: 10px -1px 97px -7px var(--box-shadow-about) inset;
+}
+
+#section-one header
+{
+    cursor: pointer;
+}
+
+#section-one p
+{
+    display: none;
+}
+
+/*^^^^^^ SECTION-TWO ^^^^^^*/
+#section-two {
+    background-image: url(/image/invitation-2508607__340.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-two {
+    background-color: var(--bg-header);
+}
+
+.container-two .container {
+    padding-block: 50px;
+}
+
+.time {
+    padding: 50px;
+    box-shadow: 0px 5px 25px var(--box-shadow-cards) inset;
+}
+
+.time span {
+    font-size: 30px;
+    font-family: var(--Blinker-R);
+    font-weight: 700;
+}
+
+/*^^^^^^ SECTION-THREE ^^^^^^*/
+#section-three {
+    font-family: var(--Blinker-L);
+}
+
+#section-three .container {
+    padding-block: 100px;
+}
+
+.header-section-three h2 {
+    font-family: var(--Blinker-B);
+}
+
+.inputs .form-control:focus {
+    border-color: var(--box-shadow-name);
+    outline: 0;
+    box-shadow: 0 0 0 .25rem var(--box-shadow-input);
+}
+
+.social-icons span {
+    transition: 0.6s all;
+}
+
+.social-icons span:hover {
+    color: var(--icon-hover);
+    background-color: var(--bg-header);
+}
