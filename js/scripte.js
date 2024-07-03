@@ -11,6 +11,12 @@ $(".open-side-bar").on("click", function () {
   $(".list-ul").fadeIn(2300);
 });
 
+$(".tar").on("click", function(e){
+  let target = $(e.target).attr("href");
+  let setOff = $(target).offset().top;
+  $("html, body").animate({scrollTop : setOff} , 900)
+})
+
 //^^^Singer Slide^^^
 $(".name-one").on("click", function () {
   $(".about-one").slideToggle(1000);
