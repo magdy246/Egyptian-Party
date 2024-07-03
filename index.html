@@ -19,17 +19,25 @@
 <body>
     <header id="header">
         <nav class="side-bar text-white position-fixed top-0 bottom-0 start-0 bg-black z-1">
-            <span class="close-btn fs-4 text-white text-end mb-4 me-2 pointer-event"><i class="fa-solid fa-close"></i></span>
-            <ul class="list-ul list-unstyled">
-                <li class="nav-info ms-3 mb-3 fs-3">Home</li>
-                <li class="nav-info ms-3 mb-3 fs-3">Duration</li>
-                <li class="nav-info ms-3 mb-3 fs-3">Details</li>
-                <li class="nav-info ms-3 mb-3 fs-3">Contact</li>
-            </ul>
+            <div class="mt-5">
+                <span class="close-btn fs-4 text-white text-end mb-4 me-2 pointer-event"><i
+                        class="fa-solid fa-close"></i></span>
+                <ul class="list-ul list-unstyled ms-2 ms-md-5">
+                    <li class="nav-info mb-3 fs-3"><a class="tar text-decoration-none" href="#header">Home</a>
+                    </li>
+                    <li class="nav-info mb-3 fs-3"><a class="tar text-decoration-none" href="#section-one">Duration</a>
+                    </li>
+                    <li class="nav-info mb-3 fs-3"><a class="tar text-decoration-none" href="#section-two">Details</a>
+                    </li>
+                    <li class="nav-info mb-3 fs-3"><a class="tar text-decoration-none" href="#section-three">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
         <div class="open-side-bar position-absolute ms-2 text-white toggel">☰ open</div>
         <div class="div-header">
-            <div class="bg-header w-100 h-100 d-flex flex-column justify-content-center align-items-center">
+            <div
+                class="bg-header w-100 h-100 d-flex flex-column justify-content-center align-items-center overflow-hidden  ">
                 <h2 class="text-center text-white">Egyption Party</h2>
                 <p class="text-center text-white">Let's have Fun</p>
             </div>
@@ -39,9 +47,10 @@
         <section id="section-one">
             <div class="container">
                 <div class="container-one m-5">
-                    <section class="singer">
-                        <header class="singer-name text-white p-3 text-center">Singer one</header>
-                        <p class="singer-about mb-0 p-3 text-center">"Lorem ipsum dolor sit amet, consectetur adipiscing
+                    <section class="singer mx-auto">
+                        <header class="singer-name name-one text-white p-3 text-center">Singer one</header>
+                        <p class="singer-about about-one mb-0 p-3 text-center">"Lorem ipsum dolor sit amet, consectetur
+                            adipiscing
                             elit,
                             sed do eiusmod tempor incididunt ut
                             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -50,9 +59,10 @@
                             cupidatat
                             non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
                     </section>
-                    <section class="singer">
-                        <header class="singer-name text-white p-3 text-center">Singer two</header>
-                        <p class="singer-about mb-0 p-3 text-center">"Sed ut perspiciatis unde omnis iste natus error
+                    <section class="singer mx-auto">
+                        <header class="singer-name name-two text-white p-3 text-center">Singer two</header>
+                        <p class="singer-about about-two mb-0 p-3 text-center">"Sed ut perspiciatis unde omnis iste
+                            natus error
                             sit
                             voluptatem accusantium doloremque
                             laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
@@ -71,9 +81,10 @@
                             fugiat
                             quo voluptas nulla pariatur?"</p>
                     </section>
-                    <section class="singer">
-                        <header class="singer-name text-white p-3 text-center">Singer three</header>
-                        <p class="singer-about mb-0 p-3 text-center">"But I must explain to you how all this mistaken
+                    <section class="singer mx-auto">
+                        <header class="singer-name name-three text-white p-3 text-center">Singer three</header>
+                        <p class="singer-about about-three mb-0 p-3 text-center">"But I must explain to you how all this
+                            mistaken
                             idea of
                             denouncing pleasure and praising pain
                             was born and I will give you a complete account of the system, and expound the actual
@@ -93,9 +104,10 @@
                             chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that
                             produces no resultant pleasure?"</p>
                     </section>
-                    <section class="singer">
-                        <header class="singer-name text-white p-3 text-center">Singer four</header>
-                        <p class="singer-about mb-0 p-3 text-center">"At vero eos et accusamus et iusto odio dignissimos
+                    <section class="singer mx-auto">
+                        <header class="singer-name name-four text-white p-3 text-center">Singer four</header>
+                        <p class="singer-about about-four mb-0 p-3 text-center">"At vero eos et accusamus et iusto odio
+                            dignissimos
                             ducimus
                             qui blanditiis praesentium voluptatum
                             deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate
@@ -120,16 +132,26 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-3 px-3">
-                            <div class="time text-center d-flex flex-column justify-content-center align-items-center"><span class="text-white" id="day">00</span><span class="text-white second">day</span></div>
+                            <div class="time text-center d-flex flex-column justify-content-center align-items-center">
+                                <span class="text-white" id="day">00</span><span class="text-white second">day</span>
+                            </div>
                         </div>
                         <div class="col-md-3 px-3">
-                            <div class="time text-center d-flex flex-column justify-content-center align-items-center"><span class="text-white" id="hour">00</span><span class="text-white minutes">hour</span></div>
+                            <div class="time text-center d-flex flex-column justify-content-center align-items-center">
+                                <span class="text-white" id="hour">00</span><span class="text-white minutes">hour</span>
+                            </div>
                         </div>
                         <div class="col-md-3 px-3">
-                            <div class="time text-center d-flex flex-column justify-content-center align-items-center"><span class="text-white" id="minutes">00</span><span class="text-white hour">minutes</span></div>
+                            <div class="time text-center d-flex flex-column justify-content-center align-items-center">
+                                <span class="text-white" id="minutes">00</span><span
+                                    class="text-white hour">minutes</span>
+                            </div>
                         </div>
                         <div class="col-md-3 px-3">
-                            <div class="time text-center d-flex flex-column justify-content-center align-items-center"><span class="text-white" id="second">00</span><span class="text-white day">seconds</span></div>
+                            <div class="time text-center d-flex flex-column justify-content-center align-items-center">
+                                <span class="text-white" id="second">00</span><span
+                                    class="text-white day">seconds</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -159,7 +181,7 @@
                                 <p class="text-center mb-4"><span class="me-2"><i
                                             class="fa-solid fa-phone-flip"></i></span>001-000-000-000</p>
                             </div>
-                            <div class="social-icons d-flex mb-3 m-md-0">
+                            <div class="social-icons d-flex flex-wrap mb-3 m-md-0">
                                 <span
                                     class="border border-1 border-dark-subtle d-flex justify-content-center align-items-center p-2 me-3"><i
                                         class="fa-brands fa-x-twitter"></i></span>

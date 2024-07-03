@@ -6,14 +6,35 @@ $(".close-btn").on("click", function () {
 });
 
 $(".open-side-bar").on("click", function () {
-  $(".side-bar").animate({ right: "70%" }, 1000);
+  $(".side-bar").animate({ right: "75%" }, 1000);
   $(".close-btn").fadeIn(2300);
   $(".list-ul").fadeIn(2300);
 });
 
 //^^^Singer Slide^^^
-$(".singer-name").on("click", function () {
-  $(".singer-about").slideToggle(2000);
+$(".name-one").on("click", function () {
+  $(".about-one").slideToggle(1000);
+  $(".about-two").slideUp(1000);
+  $(".about-three").slideUp(1000);
+  $(".about-four").slideUp(1000);
+});
+$(".name-two").on("click", function () {
+  $(".about-two").slideToggle(1000);
+  $(".about-one").slideUp(1000);
+  $(".about-three").slideUp(1000);
+  $(".about-four").slideUp(1000);
+});
+$(".name-three").on("click", function () {
+  $(".about-three").slideToggle(1000);
+  $(".about-one").slideUp(1000);
+  $(".about-two").slideUp(1000);
+  $(".about-four").slideUp(1000);
+});
+$(".name-four").on("click", function () {
+  $(".about-four").slideToggle(1000);
+  $(".about-one").slideUp(1000);
+  $(".about-two").slideUp(1000);
+  $(".about-three").slideUp(1000);
 });
 
 //^^^Event Time^^^
@@ -50,7 +71,7 @@ function gettime() {
         document.querySelector("#second").innerHTML = "00";
       }
     }
-  }, 1000);
+  }, setTimeout(gettime, 1000));
 }
 gettime();
 
