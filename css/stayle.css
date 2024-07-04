@@ -138,6 +138,7 @@ nav {
 .about-three,
 .about-four {
     display: none;
+    padding: 16px;
 }
 
 .singer {
