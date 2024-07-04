@@ -12,6 +12,7 @@ $(".open-side-bar").on("click", function () {
 });
 
 $(".tar").on("click", function(e){
+  e.preventDefault(); //*to disable open a new page
   let target = $(e.target).attr("href");
   let setOff = $(target).offset().top;
   $("html, body").animate({scrollTop : setOff} , 900)
