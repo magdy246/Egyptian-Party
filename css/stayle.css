@@ -134,11 +134,17 @@ nav {
     cursor: pointer;
 }
 
+.about-one,
+.about-two,
+.about-three,
+.about-four {
+    padding: 16px;
+}
+
 .about-two,
 .about-three,
 .about-four {
     display: none;
-    padding: 16px;
 }
 
 .singer {
