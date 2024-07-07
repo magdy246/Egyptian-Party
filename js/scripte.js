@@ -75,6 +75,9 @@ gettime();
 //^^^Character Limit^^^
 let textArea = document.querySelector("textarea");
 let counter = document.querySelector("#counter");
+let sendBtn = document.querySelector(".send-btn");
+let enableBtn = document.querySelector(".enable-btn");
+
 counter.textContent = 100;
 
 textArea.addEventListener("input", function () {
@@ -82,5 +85,13 @@ textArea.addEventListener("input", function () {
   counter.textContent = 100 - count;
   if (counter.textContent < 1) {
     counter.textContent = "You crossed the limit";
+    textArea.disabled = true;
+    enableBtn.classList.remove("d-none");
+    sendBtn.classList.add("d-none");
+    enableBtn.addEventListener("click", function () {
+      textArea.disabled = false;
+      enableBtn.classList.add("d-none");
+      sendBtn.classList.remove("d-none");
+    });
   }
 });
